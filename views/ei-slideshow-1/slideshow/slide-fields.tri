@@ -1,0 +1,42 @@
+<div class="grid">
+	<div class="row">
+		<label class="t12">
+			Title
+			<input name="title" type="text" />
+		</label>
+		<label class="t12">
+			Photo credit
+			<input name="credit" type="text" />
+		</label>
+		<label class="t6">
+			Price
+			<input name="price" type="text" />
+		</label>
+		<label class="t6">
+			Paypal button
+			<input name="paypalButton" type="text" />
+		</label>
+		<label class="t12">
+			Menu color scheme
+			<input name="textScheme" type="text" />
+		</label>
+		<label class="t12">
+			Body color scheme
+			<input name="bodyScheme" type="text" />
+		</label>
+		<label class="t12">
+			Description
+			<textarea name="desc" ></textarea>
+		</label>
+		
+		<label class="t6">
+			Main image
+			<input name="src" type="text" class="picture-input-field" data-image-dir="/img"/>
+		</label>
+		<label class="t6">
+			Mobile image
+			<input name="mobile" type="text" class="picture-input-field" data-image-dir="/img"/>
+		</label>
+
+	</div>
+</div>

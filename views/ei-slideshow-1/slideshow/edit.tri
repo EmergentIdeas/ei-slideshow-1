@@ -1,0 +1,18 @@
+
+__::$pretemplate__
+<h1>__dreck.title__</h1>
+<form method="post" action="__dreck.editUrl__" class="register bootstrap-form">
+__::./fields__
+<button type="submit">Save</button>
+</form>
+
+<h2>Slides</h2>
+<div class="slideshow-list-edit">
+	<a href="__dreck.createSlideUrl__">Create Slide</a>
+	<ul class="slides" data-sort-url="__dreck.sortSlidesUrl__">
+	__focus.slides::./slide-tile__
+
+	</ul>
+</div>
+
+__::$posttemplate__

@@ -1,0 +1,21 @@
+
+__::$pretemplate__
+<table>
+	<tr>
+		<td>
+			Name
+		</td>
+		<td>
+			__focus.name__
+		</td>
+	</tr><tr>
+		<td>
+			Id
+		</td>
+		<td>
+			__focus._id__
+		</td>
+	</tr>
+	
+</table>
+__::$posttemplate__

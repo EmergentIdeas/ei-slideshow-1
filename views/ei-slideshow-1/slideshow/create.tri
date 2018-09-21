@@ -1,0 +1,16 @@
+
+__::$pretemplate__
+
+<h1>__dreck.title__</h1>
+<div class="bootstrap-section">
+	<form method="post" class="bootstrap-form" action="__dreck.createUrl__">
+		
+		__::./fields__
+		
+		<br/><br/><br/>
+		<div class="bottom-buttons">
+			<button type="submit">Create</button>
+		</div>
+	</form>
+</div>
+__::$posttemplate__
