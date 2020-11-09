@@ -5,30 +5,30 @@
 			<input name="title" type="text" />
 		</label>
 		<label class="t12">
-			Photo credit
-			<input name="credit" type="text" />
-		</label>
-		<label class="t6">
-			Price
-			<input name="price" type="text" />
-		</label>
-		<label class="t6">
-			Paypal button
-			<input name="paypalButton" type="text" />
+			Subhead
+			<input name="subhead" type="text" />
 		</label>
 		<label class="t12">
-			Menu color scheme
-			<input name="textScheme" type="text" />
+			Sub-subhead
+			<input name="subsubhead" type="text" />
+		</label>
+
+		<label class="t12">
+			Button text
+			<input name="buttonText" type="text" />
 		</label>
 		<label class="t12">
-			Body color scheme
-			<input name="bodyScheme" type="text" />
+			Button link
+			<input name="buttonLink" type="text" />
 		</label>
+
+
 		<label class="t12">
 			Description
 			<textarea name="desc" ></textarea>
 		</label>
-		
+
+		<h3>Images</h3>
 		<label class="t6">
 			Main image
 			<input name="src" type="text" class="picture-input-field" data-image-dir="/img"/>
@@ -37,6 +37,32 @@
 			Mobile image
 			<input name="mobile" type="text" class="picture-input-field" data-image-dir="/img"/>
 		</label>
+		<label class="t12">
+			Photo credit
+			<input name="credit" type="text" />
+		</label>
+
+		<h3>Coloring styles</h3>
+		<label class="t12">
+			Menu color scheme
+			<input name="textScheme" type="text" />
+		</label>
+		<label class="t12">
+			Body color scheme
+			<input name="bodyScheme" type="text" />
+		</label>
+
+
+		<!--
+		<label class="t6">
+			Price
+			<input name="price" type="text" />
+		</label>
+		<label class="t6">
+			Paypal button
+			<input name="paypalButton" type="text" />
+		</label>
+		-->
 
 	</div>
 </div>

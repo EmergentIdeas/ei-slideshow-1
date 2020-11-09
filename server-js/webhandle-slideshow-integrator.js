@@ -6,10 +6,15 @@ const express = require('express');
 
 const SlideshowDreck = require('./slideshow-dreck')
 
-let integrate = function(dbName) {
+let integrate = function(dbName, options) {
 	if(!webhandle.dbs[dbName].collections.slideshows) {
 		webhandle.dbs[dbName].collections.slideshows = webhandle.dbs[dbName].db.collection('slideshows')
 	}
+
+	options = options || {}
+	options.templateDir = options.templateDir || 'node_modules/ei-slideshow-1/views'
+	options.addTemplateDir = options.addTemplateDir || true
+
 	
 	let slideshows = new SlideshowDreck({
 		mongoCollection: webhandle.dbs[dbName].collections.slideshows,
@@ -22,7 +27,9 @@ let integrate = function(dbName) {
 	)
 	webhandle.routers.primary.use('/slideshow', securedSlideshowsRouter)
 	
-	webhandle.addTemplateDir(path.join(webhandle.projectRoot, 'node_modules/ei-slideshow-1/views'))
+	if(options.addTemplateDir) {
+		webhandle.addTemplateDir(path.join(webhandle.projectRoot, options.templateDir))
+	}
 	
 	webhandle.pageServer.preRun.push((req, res, next) => {
 		let pageName = req.path.split('/').pop()
