@@ -51,6 +51,13 @@
 			Body color scheme
 			<input name="bodyScheme" type="text" />
 		</label>
+		<label class="t12">
+			Show slide
+			<select name="showSlide">
+				<option value="true">true</option>
+				<option value="false">false</option>
+			</select>
+		</label>
 
 
 		<!--

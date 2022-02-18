@@ -41,7 +41,7 @@ let integrate = function(dbName, options) {
 				log.error(err)
 			}
 			else if(result){
-				res.locals.page.images = result.slides
+				res.locals.page.images = result.slides.filter(slide => !(slide.showSlide == 'false' || slide.showSlide == false))
 			}
 			next()
 		})
