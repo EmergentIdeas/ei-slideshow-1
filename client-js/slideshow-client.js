@@ -1,4 +1,7 @@
 var sortable = require('sortablejs')
+if(!sortable.create && sortable.default) {
+	sortable = sortable.default
+}
 
 var $slides = $('.slideshow-list-edit .slides')
 if($slides.length > 0) {
