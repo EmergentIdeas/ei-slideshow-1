@@ -1,6 +1,6 @@
 {
   "name": "ei-slideshow-1",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "slideshow webhandle",
   "main": "index.js",
   "scripts": {
